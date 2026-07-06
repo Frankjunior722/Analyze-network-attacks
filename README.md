@@ -1,6 +1,6 @@
 # Analyze Network Attacks
 
-##Project Overview
+## Project Overview
 This project demonstrates the analysis of a simulated network attack using Wireshark.
 
 ### Objectives
@@ -112,11 +112,11 @@ This project demonstrates the analysis of a simulated network attack using Wires
 | 144 | 27.274030 | 203.0.113.0 | 192.0.2.1 | TCP | 54770→443 [SYN] Seq=0 Win=5792 Len=0 |
 | 145 | 27.597043 | 203.0.113.0 | 192.0.2.1 | TCP | 54770→443 [SYN] Seq=0 Win=5792 Len=0 |
 
-#Analyzing Network Attacks from Wireshark TCP/HTTP Log
+# Analyzing Network Attacks from Wireshark TCP/HTTP Log
 
 This analysis is based on the Wireshark TCP/HTTP Log information presented to me assuming I'm a Security Analyst working for a travel agency that advertises sales and promotions on the company's website.
 
-#WORK DONE STARTS FROM HERE
+# WORK DONE STARTS FROM HERE
 
 The network protocol analyzer log shows that the web server struggled with establishing connection on port 443. Port 443 is used to establish a secure connection between Web browsers and the web servers which is widely used TCP port for HTTPS traffic. The web server suffered a continuous SYN flood attack, which is a type of DoS (Denial of Service) attack that simulates TCP connection and floods a server with SYN packets. Due to the continuous SYN request from the malicious attacker's IP address the web server suffered communication establishment on the TCP protocol which resulted in delayed response giving out "time-out error message" as the Web server was overloaded with several SYN requests to respond to in order to establish a connection. 
 The log shows that a particular I.p. address (203.0.113.0) was flooding the Web server with numerous abnormal SYN packet every second, causing the employees, whom where the legitimate website visitors to have distributions in access the website. This is strongly attributed to a DoS attack, to stop the services being rendered by the Travel Agency through their website.
