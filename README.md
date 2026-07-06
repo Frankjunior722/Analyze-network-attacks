@@ -125,7 +125,9 @@ This attack operated by taking advantage of the first Handshake that occurs when
 •	At first, the visitor of the website tries to connect to the Web server to access the Web pages by  sending out SYN(synchronise) packet to the Web server. 
 •	The Web server will respond with a SYN / ACK (Synchronise acknowledge) packet to acknowledge the device request from the visitor of the website, then the server will wait for the final step of the handshake from the website visitor's device before releasing its resources. 
 •	Finally, the visitor's device sends an ACK (Acknowledge) packet to the server acknowledging the connection, this establishes a TCP connection. 
-However, when the SYN packet requests is sent to the Web server until it overload the server, then the server will unable to respond to the requests. This is a type of network attack that targets a network or a server and floods it with network traffic to obstruct normal business operations,hence Denial of Service (DoS).
+
+
+However, when the SYN packet requests are sent to the Web server until they overload the server, then the server will be unable to respond to the requests. This is a type of network attack that targets a network or a server and floods it with network traffic to obstruct normal business operations,hence Denial of Service (DoS).
 The Web serve tends to be overwhelmed or shutdown and be unable to handle the requests of SYN packets when a large number of SYN packets are sent to it at once or continuously. This will typically stop every operation of communication establishment under the TCP protocol with any device trying to access the Web page.
 
 
